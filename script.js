@@ -7,11 +7,25 @@ return Math.floor(Math.random() * 9);
 
 }
 
+/* old function
+
 function compareGuesses(currentHumanGuess, computerGuess, target){
 if (Math.abs(currentHumanGuess, target) <= Math.abs(computerGuess, target)) {
 return true 
 } else {
         return false;
+    }
+
+}
+*/
+
+// new function
+function compareGuesses(currentHumanGuess, computerGuess, target){
+if (Math.abs(currentHumanGuess - target) <= Math.abs(computerGuess-target)) {
+return true;
+} else if 
+    (Math.abs (currentHumanGuess-target) > Math.abs(computerGuess-target)){
+        return false; 
     }
 
 }
